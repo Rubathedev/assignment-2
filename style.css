@@ -196,10 +196,40 @@ header {
 }
 
 /* standard design */
-main {
-    max-width: 100%;
-    background-image: url("./assets/bg.png");
+@media screen and (max-width: 480px){
+  .standard-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .standard-heading {
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px 15px 0px 0px;
+  }
+  .button-container .standard-btn{
+    display: none;
+  }
+  .standard-cards{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  .standard-cards .standard-card {
+   width: 100%;
+   height: auto;
+   gap: 5px;
 
+  }
+
+}
+main {
+   width: 100%;
+    background-image: url("./assets/bg.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,10 +237,8 @@ main {
 }
 
 .standard-container {
-    max-width: 60%;
+    width: 60%;
     margin: 80px auto 80px auto;
-
-
 }
 
 .standard-cards {
@@ -219,12 +247,14 @@ main {
     text-align: center;
     margin-top: 80px;
     gap: 50px;
+    margin-bottom: 0px;
+    box-sizing: none;
 
 }
 
 .standard-heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     padding-left: 50px;
 }
@@ -293,6 +323,8 @@ main {
     border: none;
 
 }
+/* storie design */
+
 
 .storie {
     background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%), url("./assets/bg.png");
@@ -300,7 +332,7 @@ main {
 }
 
 .storie-headline {
-    font-size: 46px;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 80px;
 }
@@ -310,14 +342,14 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin: 0 auto;
-    max-width: 60%;
+    width: 60%;
 
 }
 
 .large-card {
     width: 540px;
     height: 630px;
-
+    
 }
 
 .storie-img img {
@@ -328,8 +360,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 540px;
-    height: 630px;
+    width: 90%;
+    height: 50%;
 }
 
 .storie-card {
@@ -342,7 +374,7 @@ main {
 }
 
 .large-card .storie-card-heading {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 5px;
     padding: 20px 40px;
@@ -350,7 +382,7 @@ main {
 }
 
 .storie-text {
-    font-size: 16px;
+    font-size: 0.9rem;
     margin-top: 5px;
     font-weight: 500;
     padding: 20px 40px;
@@ -397,10 +429,19 @@ main {
     font-weight: 700;
     margin-bottom: 60px;
 }
-
+@media screen and (max-width: 480px){
+    .storie-col1  .large-card{
+        display: none;
+    }
+    .storie-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 /* footer desgin */
 footer {
-    max-width: 100%;
+    width: 100%;
     background-color: rgb(1, 172, 253);
     display: flex;
     flex-direction: row;
@@ -430,19 +471,19 @@ footer {
 }
 
 .info-title {
-    font-size: 42.14px;
+    font-size: 2.3rem;
     font-weight: 700;
 }
 
 .footer-title {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 .info-para,
 .footer-about p {
     text-align: left;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -456,4 +497,26 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+@media screen and (max-width: 480px){
+    
+    .footer-container{
+        flex-direction: column;
+            width: 100%;
+            text-align: left;
+            gap: 30px;
+         
+    }
+    .footer-info{
+        width: 90%;
+   }
+    .footer-link {
+        width: 10%;
+        display: flex;
+        gap: 2px;
+    }
+    .footer-logo ,.fl{
+        width: 40%;
+        padding: 0px;
+    }
 }
