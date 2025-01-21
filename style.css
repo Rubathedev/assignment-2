@@ -202,6 +202,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
   }
   .standard-heading {
     width: 100%;
@@ -328,7 +330,7 @@ main {
 
 .storie {
     background: url(image), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%), url("./assets/bg.png");
-
+    width: 100%;
 }
 
 .storie-headline {
@@ -359,9 +361,10 @@ main {
 .storie-col2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1rem;
     width: 90%;
     height: 50%;
+    
 }
 
 .storie-card {
@@ -369,8 +372,6 @@ main {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .large-card .storie-card-heading {
@@ -390,7 +391,7 @@ main {
 }
 
 .large-card .storie-btn {
-    max-width: 40%;
+    width: 40%;
     background-color: rgb(56, 209, 234);
     color: white;
     border: none;
@@ -402,7 +403,7 @@ main {
 }
 
 .storie-btn {
-    max-width: 50%;
+    width: 50%;
     background: rgb(149, 178, 38);
     color: white;
     border: none;
@@ -415,7 +416,7 @@ main {
 
 .free-btn-container {
     margin-top: 60px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .free-btn {
@@ -425,7 +426,7 @@ main {
     color: white;
     border: none;
     padding: 12px 20px;
-    font-size: 20px;
+    font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 60px;
 }
@@ -433,11 +434,22 @@ main {
     .storie-col1  .large-card{
         display: none;
     }
+    .storie-col2{
+        gap:15px;
+    }
     .storie-container{
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
-        margin: 0 auto;
+        
     }
+    .storie-btn{
+        width: 70%;
+        left: -3px;
+        padding: 5px 2px;
+    }
+    /* .storie-card{
+       
+    } */
 }
 /* footer desgin */
 footer {
