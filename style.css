@@ -157,6 +157,12 @@ header {
     font-size: 1.2rem;
     font-weight: 700;
 }
+marquee{
+    font-weight: 800;
+    padding: 10px;
+   font-size: 2rem;
+    color: orange;
+}
 @media screen and (max-width: 480px){
     .banner-container{
         display: flex;
