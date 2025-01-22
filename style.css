@@ -199,32 +199,34 @@ header {
 @media screen and (max-width: 480px){
   .standard-container{
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: grid;
+    gap: 20px;
+  
   
   }
   .standard-heading {
-    width: 100%;
-    padding: 0px;
-    margin: 0 auto;
+    width: 90vw;  
     font-weight: 600;
-    padding: 0px;
-    margin: 0px 15px 0px 0px;
+    margin-right: 20px;
+    border: 1px solid black;
+   
+
   }
   .button-container .standard-btn{
     display: none;
   }
   .standard-cards{
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
+    width: 90%;
+    margin-top: 0;
     width: 100%;
+   
   }
   .standard-cards .standard-card {
-   width: 100%;
+   width: 357px;
    height: auto;
    gap: 5px;
+  
 
   }
 
@@ -239,18 +241,25 @@ main {
 }
 
 .standard-container {
-    width: 60%;
-    margin: 80px auto 80px auto;
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    padding: 25px;
+    
+   
 }
 
 .standard-cards {
+   width: 100%;
     display: flex;
     /* grid-template-columns: repeat(3, 1fr); */
     text-align: center;
     margin-top: 80px;
-    gap: 50px;
-    margin-bottom: 0px;
-    box-sizing: none;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 
 }
 
@@ -258,17 +267,18 @@ main {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    padding-left: 50px;
+    max-width: 1810px;
+    border: 1px solid black;
 }
 
 .standard-card {
-    width: 360px;
-    height: 476.78px;
+    width: 20%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     box-sizing: border-box;
     border: 0.94px solid rgb(255, 244, 220);
     border-radius: 18.86px;
@@ -308,12 +318,11 @@ main {
 }
 
 .button-container {
-    text-align: center;
-    max-width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin: 0 auto;
+    gap: 40px;
+   border: 1 px soild black;
 }
 
 .standard-btn {
@@ -323,6 +332,7 @@ main {
     background-color: orange;
     color: white;
     border: none;
+    margin-bottom: 10px;
 
 }
 /* storie design */
@@ -372,6 +382,7 @@ main {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .large-card .storie-card-heading {
@@ -426,7 +437,7 @@ main {
     color: white;
     border: none;
     padding: 12px 20px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 700;
     margin-bottom: 60px;
 }
@@ -435,7 +446,9 @@ main {
         display: none;
     }
     .storie-col2{
-        gap:15px;
+        gap:25px;
+        width: 100%;
+        
     }
     .storie-container{
         grid-template-columns: repeat(1, 1fr);
@@ -443,17 +456,33 @@ main {
         
     }
     .storie-btn{
-        width: 70%;
-        left: -3px;
-        padding: 5px 2px;
+        width: 65%;
+        left: 8px;
+        padding: 12px 2px;
     }
-    /* .storie-card{
-       
-    } */
+    .free-btn-container{
+        width: 100%;
+    }
+    .free-btn-container .free-btn{
+         width: 40%;
+    }
+    .storie-card{
+       padding-bottom: 10px;     
+    }
+    .storie-img img{
+        width: 100%;
+    }
+    .storie-headline{
+        margin-bottom: 20px;
+    }
+.storie-text {
+      padding: 20px;
+    }
+   
 }
 /* footer desgin */
 footer {
-    width: 100%;
+    width: 94.8%;
     background-color: rgb(1, 172, 253);
     display: flex;
     flex-direction: row;
@@ -511,10 +540,13 @@ footer {
     gap: 30px;
 }
 @media screen and (max-width: 480px){
-    
+    footer{
+        width: 90%;
+        padding: 20px;
+    }
     .footer-container{
         flex-direction: column;
-            width: 100%;
+            width: 90%;
             text-align: left;
             gap: 30px;
          
