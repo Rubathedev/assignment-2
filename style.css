@@ -198,18 +198,15 @@ header {
 /* standard design */
 @media screen and (max-width: 480px){
   .standard-container{
-    width: 90%;
+   max-width:  60%;
     gap: 20px;
-  
+    
   
   }
   .standard-heading {
     width: 90vw;  
     font-weight: 600;
     margin-right: 20px;
-    border: 1px solid black;
-   
-
   }
   .button-container .standard-btn{
     display: none;
@@ -220,14 +217,13 @@ header {
     width: 90%;
     margin-top: 0;
     width: 100%;
-   
+    margin-left: 30px;
   }
   .standard-cards .standard-card {
    width: 357px;
    height: auto;
    gap: 5px;
   
-
   }
 
 }
@@ -268,7 +264,7 @@ main {
     font-size: 2rem;
     font-weight: 700;
     max-width: 1810px;
-    border: 1px solid black;
+    
 }
 
 .standard-card {
@@ -383,6 +379,7 @@ main {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding-bottom: 20px ;
 }
 
 .large-card .storie-card-heading {
