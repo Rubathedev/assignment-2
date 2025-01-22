@@ -221,9 +221,10 @@ header {
     
   }
   .standard-cards .standard-card {
-   width: 100%;
+   width: 90%;
    height: auto;
    gap: 5px;
+   margin: 0 auto;
   
   }
 
